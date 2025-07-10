@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <style>
+      body {
+        background-image: url(h8.jpg);
+      }
+      h1 {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        text-decoration: underline;
+      }
+      .image {
+        margin: 60px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+      .image img {
+        height: 300px;
+        width: 200px;
+        border: 2px solid #ff3d0036;
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 15px;
+        transition: 400ms;
+      }
+      .image .ok {
+        height: 300px;
+        width: 250px;
+        border-radius: 16px;
+      }
+      .image img:hover {
+        transform: scale(1.59);
+      }
+      button {
+        margin-left: 800px;
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: palegreen;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Gallery</h1>
+    <div class="image">
+      <img src="IMG_20250702_165723_924.jpg" />
+      <img src="IMG_20250702_165726_970.jpg" />
+      <img src="IMG_20250703_113704.jpg" class="ok" />
+      <img src="IMG_20250702_165731_312.jpg" />
+    </div>
+    <a href="home.html"><button>Back</button></a>
+  </body>
+</html>

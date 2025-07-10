@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      img {
+        height: 723px;
+        width: 100%;
+      }
+      .navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 25px 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-content 1.5s linear forwards;
+        animation-delay: 1.2s;
+      }
+      @keyframes show-content {
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .navbar .logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+      }
+      .navbar ul {
+        display: flex;
+      }
+      .navbar ul li {
+        list-style: none;
+        margin-left: 35px;
+      }
+      .navbar ul li a {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .navbar ul li:hover a,
+      .navbar ul li.active a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="h3.webp" alt="" />
+    <nav class="navbar">
+      <a href="#" class="logo">Extrovert.</a>
+      <ul>
+        <li class="active"><a href="Page4.html">Logo</a></li>
+        <li><a href="Page2.html">Message</a></li>
+        <li><a href="Page1.html">Wish</a></li>
+        <li><a href="Page3.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
